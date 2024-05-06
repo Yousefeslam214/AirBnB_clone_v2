@@ -1,3 +1,5 @@
+from fabric import task
+
 @task
-def hello(c):
-    print("Hello, world!")
+def hello_world(c):
+    c.run('echo "Hello, World!"')
