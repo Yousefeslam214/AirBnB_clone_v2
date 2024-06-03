@@ -45,7 +45,7 @@ def number_text(n):
 
 @app.route('/number_template/<int:n>')
 def number_template_text(n):
-    """  display n is a number """
+    """  display n is a number  """
     n = str(n)
     return render_template('5-number.html', n=n)
 
