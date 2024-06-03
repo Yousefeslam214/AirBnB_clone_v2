@@ -84,4 +84,4 @@ class DBStorage:
         Because SQLAlchemy doesn't reload his `Session`
         when it's time to insert new data, we force it to!
         """
-        self.__session.close()
+        self.__session.remove()
