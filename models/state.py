@@ -15,6 +15,7 @@ class State(BaseModel, Base):
         cities = relationship('City', cascade='all, delete', backref='state')
     else:
         '''File Storage relationship '''
+        @property
         def cities(self):
             '''
             returns the list of City instances
